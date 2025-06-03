@@ -1,0 +1,17 @@
+.container{
+    padding-top: 50px;
+    width: 600px;
+}
+
+h3{
+    color: rgb(110, 14, 219);
+    font: 20px; 
+}
+
+h1{
+    color:rgb(14, 224, 224);
+}
+
+h4{
+    color:rgb(207, 27, 177); 
+}

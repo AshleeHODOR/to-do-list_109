@@ -1,0 +1,22 @@
+Notes... 
+
+# ONE TIME PER PROJECT: Create the virtual environment
+win:
+py -m venv venv
+
+mac: 
+python3 -m venv venv
+
+
+
+# Activate the VENV
+# should be done on every new terminal/computer restart/vs code restart
+win:
+venv\Scripts\activate
+
+mac:
+source venv/bin/activate
+
+
+# JUST ONCE: install flask
+python3 -m pip install flask

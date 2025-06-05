@@ -3,6 +3,8 @@ Notes...
 # ONE TIME PER PROJECT: Create the virtual environment
 win:
 py -m venv venv
+*python
+**python3 
 
 mac: 
 python3 -m venv venv

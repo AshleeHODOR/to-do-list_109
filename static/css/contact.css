@@ -8,6 +8,18 @@
     margin-top: 10px;
 }
 
+.form-container{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 6px solid #ccc;
+    border-radius: 12px;
+    background-color: #595757;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #f0ebeb;
+}
+
 .contact-container-one{
     text-align: center;
     background-color: rgb(179, 144, 212);

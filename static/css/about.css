@@ -1,7 +1,11 @@
+main{
+    background-color: rgb(76, 240, 240);
+}
+
 .container{
-    padding-top: 50px;
+    padding-top: 30px;
     width: 600px;
-    background-color: rgb(72, 235, 235);
+    padding-bottom: 50px;
 }
 
 h3{
@@ -10,9 +14,16 @@ h3{
 }
 
 h1{
-    color:rgb(14, 224, 224);
+    color:rgb(4, 9, 9);
+    padding: 60px;
+    justify-content: space-around;
+    font-size: 100px;
+    font-style: bold;
 }
 
 h4{
     color:rgb(207, 27, 177); 
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: x-large;
 }

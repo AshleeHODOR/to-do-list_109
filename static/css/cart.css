@@ -1,0 +1,8 @@
+main{
+    background: #3F5EFB;
+    background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgb(243, 84, 116) 100%);
+}
+
+.container{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

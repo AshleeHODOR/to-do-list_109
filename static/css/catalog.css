@@ -1,0 +1,47 @@
+main{
+    background-color: rgb(234, 211, 182);
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+    color: rgb(123, 11, 227);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.product{
+    border: 6px solid rgb(123, 11, 227);
+    width: 250px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    margin: 13px 13px 13px 13px;
+    border-radius: 25px;
+
+    padding: 9px;
+    height: 300px;
+    vertical-align: top;
+}
+
+.container-container{
+}
+
+.product img{
+    max-height: 180px;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product label{
+    display: block;
+}
+
+.footer-container{
+    background-color: rgb(189, 149, 226);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}

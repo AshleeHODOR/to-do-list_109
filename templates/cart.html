@@ -16,7 +16,18 @@
 
     <main class="container">
         <h1>Ready to complete your order?</h1>
-        <p>HODOR</p>
+
+        {% for prod in cart_prods %}
+
+        <div class="item">
+            <img src="{{prod.image}}">
+            <h5>{{prod.title}}</h5>
+            <label>${{prod.price}}</label>
+        </div>
+
+        {% endfor %}
+
+
     </main>
     
 </body>

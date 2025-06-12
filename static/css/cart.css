@@ -1,8 +1,39 @@
+body{
+    background: #bf99e8;
+    background: radial-gradient(circle,rgba(191, 153, 232, 1) 0%, rgba(122, 70, 252, 1) 100%);
+}
+
 main{
-    background: #3F5EFB;
-    background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgb(243, 84, 116) 100%);
+    color: rgb(22, 22, 21);
+    font-size: xx-large;
+    padding: 22px;
 }
 
 .container{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: space-around;
+    font-family: Georgia, 'Times New Roman', Times, serif;    
+}
+
+.item{
+    border: 3px solid;
+    display: flex;
+    align-items: center; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.item img{
+    height:100px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.item label{
+    margin-left: auto;
+    font-size: x-large;
+    font-weight: bold;
+    font-size: 40px;
+    margin-right: 30px;
 }

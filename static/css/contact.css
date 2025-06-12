@@ -22,12 +22,13 @@
 
 .contact-container-one{
     text-align: center;
-    background-color: rgb(179, 144, 212);
+    background-color: rgb(109, 11, 200);
+    color: white;
+    border: 9px solid black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
     padding: 30px;
     justify-content: center;
-    border: 9px solid;
 }
 
 .form{

@@ -24,12 +24,16 @@
                     <img src="{{ prod.image }}">
                     <h5>{{prod.title}}</h5>
                     <label>${{prod.price}}</label>
-
+                
+                <form method="post" action="/addTocart">
+                    <input name="title" type="hidden" value="{{prod.title}}"> 
                     <button class="btn btn-sm btn-danger">Add</button>
-                </div>
-            {% endfor %}
+                </form>
+            </div>
 
-        </div>
+        {% endfor %}
+
+    </div>
 
 
     </main>

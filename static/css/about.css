@@ -1,5 +1,6 @@
-main{
-    background-color: rgb(76, 240, 240);
+body{
+    background: #f5f7f4;
+    background: radial-gradient(circle,rgba(245, 173, 100, 1) 0%, rgba(107, 11, 191, 1) 100%);
 }
 
 .container{
@@ -9,12 +10,13 @@ main{
 }
 
 h3{
-    color: rgb(110, 14, 219);
+    color: rgb(255, 255, 255);
     font: 20px; 
 }
 
 h1{
-    color:rgb(4, 9, 9);
+    color:rgb(18, 18, 19);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 60px;
     justify-content: space-around;
     font-size: 100px;
@@ -22,8 +24,14 @@ h1{
 }
 
 h4{
-    color:rgb(207, 27, 177); 
+    color:rgb(252, 250, 249); 
     margin-top: 10px;
     margin-bottom: 40px;
     font-size: x-large;
+    font-size: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    color: white;
 }

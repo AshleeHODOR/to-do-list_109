@@ -72,7 +72,7 @@ all_products = [
     {
         "title": "The Alchemist",
         "price": 17, 
-        "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSxm76Kh1Eq2A9ed2j9q3l2j4NvBe9Ad_DLrJPtsYaTlbleVdVwqLMXUuggX9eDqqFXub4Jt7GY1aulnIFF13ajABTZuPEdgaJKkvbKLP0m6GOxILSd_is1HgV3dF-0wOu1WkdbVGStig&usqp=CAc"
+        "image": "https://m.media-amazon.com/images/I/41wyts+Bk8L._SL350_.jpg"
     },
     {
         "title": "Temporary tattoos",
@@ -81,7 +81,7 @@ all_products = [
     },
     {
         "title": "Travis Kelce Bobblehead",
-        "price": 34.98, 
+        "price": 99.98, 
         "image": "https://www.foco.com/cdn/shop/files/BHNFSMUTNENKCTK_p_2048x.jpg?v=1737683677"   
     },
     {
@@ -96,17 +96,38 @@ all_products = [
     },
 ]
 
+cart_list = []
+
 @server.get("/catalog")
 def catalog():
     return render_template("catalog.html", all_products=all_products)
 
+@server.post("/addTocart")
+def add_to_cart():
+    title = request.form.get("title")
+    cart_list.append(title) 
+    return redirect(url_for("catalog"))
+#save on a list 
+
+
+
 @server.get("/cart")
 def cart():
-    return render_template("cart.html")
+
+
+    cart_prods = []
+    for title in cart_list:
+        for prod in all_products:
+            if prod["title"] == title:
+                #found match
+                cart_prods.append(prod)
+
+
+
+    return render_template("cart.html", cart_prods=cart_prods)
 
 
 #---------------------------------------------------------
-
 
 
 #start the server

@@ -37,3 +37,20 @@ main{
     font-size: 40px;
     margin-right: 30px;
 }
+
+.info{
+    text-align: right;
+    padding: 20px; 
+    background-color: #7502f0;
+    color: beige;
+}
+
+.info label{
+    color: beige;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+info.value{
+    
+}

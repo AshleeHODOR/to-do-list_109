@@ -40,6 +40,7 @@ h1{
 
 .footer-container{
     background-color: rgb(189, 149, 226);
+    margin-top: auto;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     text-align: center;
     font-weight: bold;

@@ -28,6 +28,8 @@ def about():
 def contact():
     return render_template("contact.html")
 
+
+
 all_images = []
 
 @server.get("/gallery")
@@ -76,17 +78,17 @@ all_products = [
     },
     {
         "title": "Temporary tattoos",
-        "price": 11.99, 
+        "price": 7.57, 
         "image": "https://m.media-amazon.com/images/I/81CpfWs1RQL._AC_UF1000,1000_QL80_.jpg" 
     },
     {
         "title": "Travis Kelce Bobblehead",
-        "price": 99.98, 
+        "price": 87.87, 
         "image": "https://www.foco.com/cdn/shop/files/BHNFSMUTNENKCTK_p_2048x.jpg?v=1737683677"   
     },
     {
         "title": "Titanic DVD",
-        "price": 34.98, 
+        "price": 57.57, 
         "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQZaIsmdalhcCzj36k_lprPSsiNltliBDU4caGrN3rc5StVvprjpcb6rwPd5LOgIIsdZmG7XnX6DQ0Xl7jYPnJn8FObfqDDJi7nAoWNu_pH&usqp=CAc"   
     },
     {
@@ -123,11 +125,39 @@ def cart():
                 cart_prods.append(prod)
 
 
+    total = 0
+    for prod in cart_prods:
+        total += prod["price"]
 
-    return render_template("cart.html", cart_prods=cart_prods)
+
+    return render_template("cart.html", cart_prods=cart_prods, total=total)
 
 
 #---------------------------------------------------------
+
+
+@server.get("/admin")
+def admin():
+    return render_template("admin.html")
+
+
+@server.post("/saveProduct")
+def save_product():
+    title = request.form.get('title')
+    price = request.form.get('price')
+    image = request.form.get('image')
+
+    #create dictionary
+    product = {
+        'title': title,
+        'price': float(price),
+        'image': image
+    }
+
+    #add to catalog
+    all_products.append(product)
+
+    return redirect(url_for('catalog'))
 
 
 #start the server
